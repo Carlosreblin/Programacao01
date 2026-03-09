@@ -18,17 +18,17 @@ public class Estudante {
     private String matricula;
     private String email;
     
-    public int obterIdade(Date hoje){
+    private int obterIdade(Date hoje){
         int idade=0;
         return idade;
     }
     public Estudante(String nome, String cpf, Date dataNascimento, char genero, String matricula, String email) {
-        this.setNome(nome);
-        this.setCpf(cpf);
-        this.setDataNascimento(dataNascimento);
-        this.setGenero(genero);
-        this.setMatricula(matricula);
-        this.setEmail(email);
+        setNome(nome);
+        setCpf(cpf);
+        setDataNascimento(dataNascimento);
+        setGenero(genero);
+        setMatricula(matricula);
+        setEmail(email);
     }
     public String getNome() {
         return nome;
