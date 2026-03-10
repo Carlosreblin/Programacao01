@@ -11,7 +11,7 @@ import java.util.Date;
  * @author aluno
  */
 public class Estudante {
-    private String nome;
+    private static String nome;
     private String cpf;
     private Date dataNascimento;
     private char genero;
@@ -22,18 +22,10 @@ public class Estudante {
         int idade=0;
         return idade;
     }
-    public Estudante(String nome, String cpf, Date dataNascimento, char genero, String matricula, String email) {
-        setNome(nome);
-        setCpf(cpf);
-        setDataNascimento(dataNascimento);
-        setGenero(genero);
-        setMatricula(matricula);
-        setEmail(email);
-    }
-    public String getNome() {
+    public static String getNome() {
         return nome;
     }
-    public void setNome(String _nome) {
+    public static void setNome(String _nome) {
         this.nome = _nome;
     }
     public String getCpf() {
@@ -69,3 +61,4 @@ public class Estudante {
     
     
 }
+
