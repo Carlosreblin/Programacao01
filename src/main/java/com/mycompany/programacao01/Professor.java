@@ -19,7 +19,7 @@ public class Professor {
     private String area;
     private String regime;
     private Date dataIngresso;
-    private Formacao formacao[];
+    private Formacao formacao;
 
     public String getNome() {
         return nome;
@@ -85,11 +85,11 @@ public class Professor {
         this.dataIngresso = dataIngresso;
     }
 
-    public Formacao[] getFormacao() {
+    public Formacao getFormacao() {
         return formacao;
     }
 
-    public void setFormacao(Formacao[] formacao) {
+    public void setFormacao(Formacao formacao) {
         this.formacao = formacao;
     }
 
