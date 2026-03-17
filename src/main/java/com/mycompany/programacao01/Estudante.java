@@ -22,6 +22,7 @@ public class Estudante {
     private int semestreIngresso;
     private boolean situacaoAcademica;
     private NivelEnsino nivelEnsino;
+    private String digito;
     
     private int obterIdade(Date hoje){
         int idade=0;
@@ -52,10 +53,10 @@ public class Estudante {
         this.genero = genero;
     }
     public String getMatricula() {
-        return matricula;
+        return String.valueOf(anoIngresso).toString()+String.valueOf(semestreIngresso).toString()+digito;
     }
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
+    public void setMatricula(String digito) {
+        this.digito = digito;
     }
     public String getEmail() {
         return email;
