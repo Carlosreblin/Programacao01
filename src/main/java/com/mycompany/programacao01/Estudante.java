@@ -17,6 +17,11 @@ public class Estudante {
     private char genero;
     private String matricula;
     private String email;
+    private String telefone;
+    private int anoIngresso;
+    private int semestreIngresso;
+    private boolean situacaoAcademica;
+    private NivelEnsino nivelEnsino;
     
     private int obterIdade(Date hoje){
         int idade=0;
@@ -26,7 +31,7 @@ public class Estudante {
         return nome;
     }
     public static void setNome(String _nome) {
-        this.nome = _nome;
+        Estudante.nome = _nome;
     }
     public String getCpf() {
         return cpf;
@@ -57,6 +62,38 @@ public class Estudante {
     }
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public int getAnoIngresso() {
+        return anoIngresso;
+    }
+
+    public void setAnoIngresso(int anoIngresso) {
+        this.anoIngresso = anoIngresso;
+    }
+
+    public boolean isAprovado() {
+        return situacaoAcademica;
+    }
+
+    public void setAprovado(boolean aprovado) {
+        this.situacaoAcademica = aprovado;
+    }
+
+    public NivelEnsino getNivelEnsino() {
+        return nivelEnsino;
+    }
+
+    public void setNivelEnsino(NivelEnsino nivelEnsino) {
+        this.nivelEnsino = nivelEnsino;
     }
     
     
