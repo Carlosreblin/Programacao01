@@ -4,6 +4,8 @@
  */
 package com.mycompany.programacao01;
 
+import com.mycompany.programacao01.enums.NivelEnsino;
+
 import java.util.Date;
 
 /**
@@ -31,27 +33,36 @@ public class Estudante {
     public static String getNome() {
         return nome;
     }
+
     public static void setNome(String _nome) {
         Estudante.nome = _nome;
     }
+
     public String getCpf() {
         return cpf;
     }
+
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
+
     public Date getDataNascimento() {
         return dataNascimento;
     }
+
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
+
     public char getGenero() {
         return genero;
     }
+
     public void setGenero(char genero) {
         this.genero = genero;
     }
+
     public String getMatricula() {
         return String.valueOf(anoIngresso).toString()+String.valueOf(semestreIngresso).toString()+digito;
     }
@@ -96,7 +107,6 @@ public class Estudante {
     public void setNivelEnsino(NivelEnsino nivelEnsino) {
         this.nivelEnsino = nivelEnsino;
     }
-    
-    
+
 }
 

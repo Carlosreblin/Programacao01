@@ -72,7 +72,5 @@ public class Diciplina {
     public void setReferenciasBibliograficas(String[] referenciasBibliograficas) {
         this.referenciasBibliograficas = referenciasBibliograficas;
     }
-    
-    
-    
+
 }

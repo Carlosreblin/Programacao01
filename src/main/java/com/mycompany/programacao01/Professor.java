@@ -4,6 +4,8 @@
  */
 package com.mycompany.programacao01;
 
+import com.mycompany.programacao01.enums.Formacao;
+
 import java.util.Date;
 
 /**
