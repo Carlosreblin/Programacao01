@@ -18,6 +18,11 @@ public class CursoTecnico extends Curso{
     }
 
     @Override
+    public void realizarMatricula(){
+        
+    }
+
+    @Override
     public List<Diciplina> obterDiciplinas() {
         return List.of();
     }
