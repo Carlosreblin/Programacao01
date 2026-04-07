@@ -16,6 +16,8 @@ public abstract class Curso {
     private Modalidade modalidade;
     private boolean status;
 
+    public abstract void realizarMatricula();
+
     public abstract List<Diciplina> obterDiciplinas();
 
     public abstract List<Estudante> obterAlunosAtivos();
