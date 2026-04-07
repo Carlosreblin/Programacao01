@@ -15,10 +15,13 @@ public abstract class Curso {
     private TipoDuracao tipoDuracao;
     private Modalidade modalidade;
     private boolean status;
+    private List<Diciplina> diciplinas = new ArrayList<Diciplina>();
 
     public abstract void realizarMatricula();
 
-    public abstract List<Diciplina> obterDiciplinas();
+    public List<Diciplina> obterDiciplinas(){
+        return dicplinas;
+    }
 
     public abstract List<Estudante> obterAlunosAtivos();
 
